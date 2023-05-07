@@ -1,0 +1,34 @@
+.story_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    height: 125px;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add_story {
+    background-color: #ffffff;
+    justify-content: center;
+    width: 100px;
+    height: 120px;
+    margin-bottom: 20px;
+    border: 2px dashed lightgray;
+}
+
+.story-image {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.story-caption {
+    font-size: 14px;
+}

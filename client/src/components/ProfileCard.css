@@ -1,0 +1,63 @@
+
+.photo_area {
+    position: relative;
+    width: 100%;
+}
+.cover_photo img{
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+}
+.profile_photo {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 30px;
+}
+.profile_photo img{
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+.pc_contant{
+    position: relative;
+    top: 30px;
+}
+.pc_contant h3 span{
+    font-size: 15px;
+    color: #676A79;
+}
+.pc_contant p{
+    color: #676A79;
+}
+.profile_info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    border-bottom: 1px solid lightgray;
+}
+.profile_info h4{
+    padding: 0px 20px;
+}
+.profile_info h4 span{
+    font-size: 14px;
+    color: #676A79;
+}
+.followers{
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+.options{
+    text-align: start;
+    text-decoration: none;
+    border-bottom: 1px solid lightgray;
+}
+.options li{
+    list-style: none;
+    padding: 10px 0px;
+    font-weight: bold;
+}
+.view_porfile{
+    font-size: 20px;
+    text-decoration: none;
+    
+}

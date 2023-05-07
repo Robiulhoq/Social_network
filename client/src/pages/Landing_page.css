@@ -1,0 +1,40 @@
+.item1 {grid-area: s; height: 130px;}
+.item2 { grid-area: p; }
+.item3 { grid-area: n; height: auto;}
+.item4 { grid-area: p2; }
+.item5 { grid-area: f; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:'p p p s s s s s s f f f';
+  gap: 30px;
+  background-color: #EFF2F6;
+  margin: 30px 1.5in 0px 1.5in;
+}
+@media (max-width: 768px){
+  .item2{
+    display: none;
+  }
+  .item5{
+    display: none;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:'s s s s s s s s s s s s'
+                        'n n n n n n n n n n n n'
+                        'p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2';
+    margin: 30px 5px 0px 5px;                      
+}
+}
+@media (max-width: 992px){
+  .grid-container {
+    margin: 30px 10px 0px 10px; 
+    gap: 15px;                     
+}
+}
+.grid-container > div {
+  background-color: #ffffff;
+  text-align: center;
+}

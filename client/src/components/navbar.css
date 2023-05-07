@@ -1,0 +1,154 @@
+/* Navbar styles */
+.navbar_container{
+    /* position: fixed; */
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 0px 1.5in;
+}
+
+/* Logo styles */
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.navbar__logo i{
+    font-size: 30px;
+    background-color: #EFF2F6;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Search bar styles */
+.navbar__search {
+    flex: 1;
+    
+}
+
+.navbar__search form {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__search input[type="text"] {
+    padding: 5px;
+    height: 25px;
+    border: none;
+    background-color: #EEF0F2;
+    border-bottom: 1px solid #ddd;
+    /* margin-right: 10px; */
+    flex: 1;
+}
+
+.navbar__search button[type="submit"] {
+    padding: 10px 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* List items styles */
+.navbar__list {
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar__list li {
+    margin-right: 20px;
+    list-style: none;
+}
+
+.navbar__list li:last-child {
+    margin-right: 0;
+}
+
+.navbar__list a {
+    text-decoration: none;
+    color: #535353;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar__list a:hover {
+    color: rgb(47, 47, 228);
+}
+
+/* Icon items styles */
+.navbar__icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__icons li {
+    margin-right: 20px;
+    list-style-type: none;
+    background-color: #EEF0F2;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.navbar__icons i {
+    color: #535353ed;
+}
+
+.navbar__icons i:hover {
+    color: black;
+}
+
+.navbar__icons li:last-child {
+    margin-right: 0;
+}
+
+.navbar__icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+#hemberger {
+    display: none;
+}
+
+#navbar__list_mobile {
+    display: none;
+}
+#xmark{
+    display: none;
+}
+@media only screen and (max-width: 992px) {
+    .navbar {
+        border-bottom: none;
+        padding: 0px 15px;
+    }
+    #hemberger {
+        display: block;
+    }
+    .navbar__list {
+        display: none;
+        margin-left: 0px;
+        align-items: center;
+    }
+    #navbar__list_mobile {
+        display: none;
+        background-color: #ffffff;
+        margin:0px;
+        padding: 10px 30px 0px 30px;
+    }
+    #xmark{
+        display: none;
+    }
+    #navbar__list_mobile li {
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+    .nav_mobile{
+        display: none;
+    }
+}
